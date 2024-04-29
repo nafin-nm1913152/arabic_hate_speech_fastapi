@@ -17,9 +17,8 @@ def get_model():
 
 d = {
     
-  0: 'Hate Speech', 
-  1: 'Offensive Language', 
-  2: 'Neither'
+  1: 'Hate Speech', 
+  0: 'Neither'
 }
 
 tokenizer,model = get_model()
