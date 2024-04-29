@@ -44,7 +44,7 @@ async def read_root(request: Request):
         predicted_class = tf.argmax(probabilities).numpy()
         print("Predicted class:", predicted_class)
 
-        class_labels = {1: 'Hate Speech', 0: 'Neither'}
+        class_labels = {0: 'Hate Speech', 1: 'Neither'}
         print("Class labels:", class_labels)
 
         predicted_label = class_labels[predicted_class]
